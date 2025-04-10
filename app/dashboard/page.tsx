@@ -1,9 +1,9 @@
 tsx
 
 import { collection, getDocs, getFirestore } from 'firebase/firestore';
-import { app } from '@/src/firebase';
-import { Report } from '@/src/types/types';
-import DashboardClient from '@/src/components/DashboardClient';
+import { app } from '../src/firebase';
+import { Report } from '../../src/types/types';
+import DashboardClient from '../src/components/DashboardClient';
 
 const getReports = async (): Promise<Report[]> => {
   const db = getFirestore(app);
